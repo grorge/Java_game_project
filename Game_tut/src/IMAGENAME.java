@@ -1,0 +1,4 @@
+
+public enum IMAGENAME {
+	TREE, WALL, FIELD, DOOR, WOODFLOOR;
+}
