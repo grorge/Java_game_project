@@ -8,12 +8,6 @@ public abstract class UnitObj extends GameObj {
 		// TODO Auto-generated constructor stub
 	}
 
-//	@Override
-//	protected void SetImage() {
-//		// TODO Auto-generated method stub
-//		
-//	}
-
 	//@Override
 	//public abstract void tick();
 	

@@ -47,10 +47,10 @@ public abstract class GameObj {
 	public boolean collidingWith(GameObj target) {
 		
 		// Simple collision
-		if (this.x > target.x - target.w)
-			if(this.x < target.x + target.w) 
-				if (this.y > target.y - target.h)
-					if(this.y < target.y + target.h) {
+		if (this.x < target.x + target.w)
+			if(this.x + this.w > target.x) 
+				if (this.y < target.y + target.h)
+					if(this.y + this.h > target.y) {
 						return true;
 					}
 		
