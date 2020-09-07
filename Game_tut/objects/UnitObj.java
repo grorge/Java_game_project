@@ -1,6 +1,7 @@
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 
+// A unit sub-class that handels health and objects that wil live and move around
 public abstract class UnitObj extends GameObj {
 
 	float hp = 100;
@@ -23,6 +24,9 @@ public abstract class UnitObj extends GameObj {
 
 		this.cx = this.x + (this.w/2);
 		this.cy = this.y + (this.h/2);
+		
+		this.moveVector.tick();
+		
 	}
 
 	@Override

@@ -9,6 +9,8 @@ public class ObjPlayer extends UnitObj{
 	
 	public ObjPlayer(int x, int y, ID id) {
 		super(x, y, 32, 32, id);
+		
+		//this.moveVector.reductionSpeed = 0.95f;
 	}
 
 	@Override
