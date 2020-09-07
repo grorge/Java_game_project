@@ -19,10 +19,10 @@ public class KeyInput extends KeyAdapter{
 		
 		System.out.print(key);
 		
-		if (key == KeyEvent.VK_W)	gHandler.objects.get(0).setVelY(-1.0f);
-		if (key == KeyEvent.VK_S)	gHandler.objects.get(0).setVelY(1.0f);
-		if (key == KeyEvent.VK_A)	gHandler.objects.get(0).setVelX(-1.0f);
-		if (key == KeyEvent.VK_D)	gHandler.objects.get(0).setVelX(1.0f);
+		if (key == KeyEvent.VK_W)	gHandler.players.getFirst().setVelY(-1.0f);
+		if (key == KeyEvent.VK_S)	gHandler.players.getFirst().setVelY(1.0f);
+		if (key == KeyEvent.VK_A)	gHandler.players.getFirst().setVelX(-1.0f);
+		if (key == KeyEvent.VK_D)	gHandler.players.getFirst().setVelX(1.0f);
 		
 		
 		if (key == KeyEvent.VK_1) { 
@@ -47,10 +47,10 @@ int key = e.getKeyCode();
 		
 		System.out.print(key);
 		
-		if (key == KeyEvent.VK_W)	gHandler.objects.get(0).velY = 0.0f;
-		if (key == KeyEvent.VK_S)	gHandler.objects.get(0).velY = 0.0f;
-		if (key == KeyEvent.VK_A)	gHandler.objects.get(0).velX = 0.0f;
-		if (key == KeyEvent.VK_D)	gHandler.objects.get(0).velX = 0.0f;
+		if (key == KeyEvent.VK_W)	gHandler.players.getFirst().setVelY(0.0f);
+		if (key == KeyEvent.VK_S)	gHandler.players.getFirst().setVelY(0.0f);
+		if (key == KeyEvent.VK_A)	gHandler.players.getFirst().setVelX(0.0f);
+		if (key == KeyEvent.VK_D)	gHandler.players.getFirst().setVelX(0.0f);
 	}
 	
 }

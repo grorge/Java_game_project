@@ -38,8 +38,8 @@ public class ObjTerrain extends GameObj
 	public void playerCollision(ObjPlayer player, GlobalEvents gEvent) {
 
 		// Simple collision handling
-		player.x += player.velX * -1.0f;
-		player.y += player.velY * -1.0f; 
+		player.x += player.moveVector.x * -1.0f;
+		player.y += player.moveVector.y * -1.0f; 
 		
 		
 	}

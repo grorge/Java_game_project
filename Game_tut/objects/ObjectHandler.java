@@ -116,7 +116,7 @@ public class ObjectHandler {
 				if (ori.uID != target.uID) {
 					
 					if (ori.collidingWith(target)) {
-						System.out.println("COLLISION");
+//						System.out.println("COLLISION");
 						
 						target.playerCollision(ori, this.gEvent);
 						
