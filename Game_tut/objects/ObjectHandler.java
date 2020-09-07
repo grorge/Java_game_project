@@ -86,8 +86,18 @@ public class ObjectHandler {
 	public void addMapObjects(LinkedList<GameObj> mapObjects) {
 		objects.clear();
 		players.clear();
-		
+
 		this.addObj(new ObjPlayer(516,516,ID.Player));
+		
+		ObjEnemy enemy = new ObjEnemy(316,316,ID.Enemy);
+		enemy.SetTarget(this.players.getFirst());
+		this.addObj(enemy);
+		enemy = new ObjEnemy(316,816,ID.Enemy);
+		enemy.SetTarget(this.players.getFirst());
+		this.addObj(enemy);
+		
+		
+		
 		
 		for (GameObj gameObj : mapObjects) {
 			objects.add(gameObj);

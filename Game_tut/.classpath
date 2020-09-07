@@ -8,5 +8,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="objects"/>
 	<classpathentry kind="src" path="maphandling"/>
+	<classpathentry kind="src" path="Logic"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
