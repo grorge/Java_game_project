@@ -4,6 +4,7 @@ import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.util.Vector;
 
+// Object handling enemy logic - will be expanded to subclasses
 public class ObjEnemy extends UnitObj {
 
 	GameObj targetObj;
@@ -20,11 +21,11 @@ public class ObjEnemy extends UnitObj {
 
 		MovementVector dir = target_pos.GetSubtractedVector(new MovementVector(this.x,this.y));
 		
-		dir.NormalizeVector();
+		dir.SnapToAxis();
 		
 		this.moveVector = dir;
 		
-		System.out.println(dir.x + "," + dir.y);
+//		System.out.println(dir.x + "," + dir.y);
 		
 	}
 	
