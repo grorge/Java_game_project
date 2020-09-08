@@ -92,9 +92,9 @@ public class ObjectHandler {
 		ObjEnemy enemy = new ObjEnemy(316,316,ID.Enemy);
 		enemy.SetTarget(this.players.getFirst());
 		this.addObj(enemy);
-		enemy = new ObjEnemy(316,816,ID.Enemy);
-		enemy.SetTarget(this.players.getFirst());
-		this.addObj(enemy);
+		ObjEnemy enemy2 = new ObjEnemy(316,816,ID.Enemy);
+		enemy2.SetTarget(this.players.getFirst());
+		this.addObj(enemy2);
 		
 		
 		

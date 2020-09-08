@@ -1,4 +1,5 @@
 
+// Handels vector logic for movement of objects
 public class MovementVector {
 	float x;
 	float y;
@@ -7,14 +8,14 @@ public class MovementVector {
 	
 	float reductionSpeed;
 
+	
 	public MovementVector(float x, float y) {
-		// TODO Auto-generated constructor stub
 		this.x = x;
 		this.y = y;
 		this.reductionSpeed = 1;
 	}
+	
 	public MovementVector() {
-		// TODO Auto-generated constructor stub
 		x = 0;
 		y = 0;
 		this.reductionSpeed = 1;
@@ -37,7 +38,7 @@ public class MovementVector {
 		this.y /= this.length;
 	}
 	
-	public MovementVector GetNormalizedVector() {
+	public MovementVector GetDirectionVector() {
 		this.length = GetLength();
 		
 		MovementVector ret_vector = new MovementVector(x/length,y/length);
@@ -48,4 +49,18 @@ public class MovementVector {
 	public float GetLength() {
 		return (float) Math.sqrt((double)(x*x + y*y));
 	}
+	
+
+	public MovementVector GetCombinedVector(MovementVector target) {
+		MovementVector ret_vec = new MovementVector(this.x + target.x, this.y + target.y);
+		
+		return ret_vec;
+	}
+	
+	public MovementVector GetSubtractedVector(MovementVector target) {
+		MovementVector ret_vec = new MovementVector(this.x - target.x, this.y - target.y);
+		
+		return ret_vec;
+	}
+	
 }

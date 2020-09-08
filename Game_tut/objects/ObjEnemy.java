@@ -15,10 +15,16 @@ public class ObjEnemy extends UnitObj {
 	@Override
 	public void tick() {
 		ApplyMovement();
-
-		Vector dir = new Vector();
-		dir.add(this.targetObj.x - this.x);
 		
+		MovementVector target_pos = new MovementVector(targetObj.x, targetObj.y);
+
+		MovementVector dir = target_pos.GetSubtractedVector(new MovementVector(this.x,this.y));
+		
+		dir.NormalizeVector();
+		
+		this.moveVector = dir;
+		
+		System.out.println(dir.x + "," + dir.y);
 		
 	}
 	

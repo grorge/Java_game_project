@@ -25,7 +25,7 @@ public abstract class UnitObj extends GameObj {
 		this.cx = this.x + (this.w/2);
 		this.cy = this.y + (this.h/2);
 		
-		this.moveVector.tick();
+		//this.moveVector.tick();
 		
 	}
 
