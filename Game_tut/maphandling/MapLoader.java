@@ -27,31 +27,33 @@ public class MapLoader {
 		
 //		this.loadMap(new MapDataHome());
 		
+		ImageBank temp_bank = new ImageBank();
+		this.imgBank = temp_bank.LoadImages();
 		
-		try {
-			this.imgBank.put(IMAGENAME.FIELD, ImageIO.read(new File("img/grass32.png")));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			System.out.println("ERROR LOADING IMAGE");
-		}
-		try {
-			this.imgBank.put(IMAGENAME.WALL, ImageIO.read(new File("img/wall32.png")));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			System.out.println("ERROR LOADING IMAGE");
-		}
-		try {
-			this.imgBank.put(IMAGENAME.TREE, ImageIO.read(new File("img/tree.png")));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			System.out.println("ERROR LOADING IMAGE");
-		}
-		try {
-			this.imgBank.put(IMAGENAME.WOODFLOOR, ImageIO.read(new File("img/woodfloor32.png")));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			System.out.println("ERROR LOADING IMAGE");
-		}
+//		try {
+//			this.imgBank.put(IMAGENAME.FIELD, ImageIO.read(new File("img/grass32.png")));
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			System.out.println("ERROR LOADING IMAGE");
+//		}
+//		try {
+//			this.imgBank.put(IMAGENAME.WALL, ImageIO.read(new File("img/wall32.png")));
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			System.out.println("ERROR LOADING IMAGE");
+//		}
+//		try {
+//			this.imgBank.put(IMAGENAME.TREE, ImageIO.read(new File("img/tree.png")));
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			System.out.println("ERROR LOADING IMAGE");
+//		}
+//		try {
+//			this.imgBank.put(IMAGENAME.WOODFLOOR, ImageIO.read(new File("img/woodfloor32.png")));
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			System.out.println("ERROR LOADING IMAGE");
+//		}
 		
 	}
 	

@@ -24,31 +24,10 @@ public class ObjectHandler {
 	public ObjectHandler(GlobalEvents eve) {
 		this.gEvent = eve;
 		
-		// Load the images into the image bank
-		try {
-			this.imgBank.put(IMAGENAME.FIELD, ImageIO.read(new File("img/grass32.png")));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			System.out.println("ERROR LOADING IMAGE");
-		}
-		try {
-			this.imgBank.put(IMAGENAME.WALL, ImageIO.read(new File("img/wall32.png")));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			System.out.println("ERROR LOADING IMAGE");
-		}
-		try {
-			this.imgBank.put(IMAGENAME.TREE, ImageIO.read(new File("img/tree.png")));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			System.out.println("ERROR LOADING IMAGE");
-		}
-		try {
-			this.imgBank.put(IMAGENAME.DOOR, ImageIO.read(new File("img/door32.png")));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			System.out.println("ERROR LOADING IMAGE");
-		}
+
+		ImageBank temp_bank = new ImageBank();
+		this.imgBank = temp_bank.LoadImages();
+		
 	}
 	
 	
