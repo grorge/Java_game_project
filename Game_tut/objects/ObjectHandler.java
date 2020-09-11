@@ -16,6 +16,7 @@ public class ObjectHandler {
 	LinkedList<GameObj> objects = new LinkedList<GameObj>();
 
 	LinkedList<ObjPlayer> players = new LinkedList<ObjPlayer>();
+	LinkedList<ObjEnemy> enemies = new LinkedList<ObjEnemy>();
 	
 	GlobalEvents gEvent; 
 	
@@ -90,6 +91,7 @@ public class ObjectHandler {
 	//////////////////////
 	
 	private void collisionCheck() {
+		// Player collision check with the world
 		for (ObjPlayer ori : players) {
 			for (GameObj target : objects) {
 				if (ori.uID != target.uID) {
@@ -102,9 +104,21 @@ public class ObjectHandler {
 					}
 				}
 			}
-			
-			
-			
+		}
+		
+		// Emeny collision check
+		for (ObjEnemy ori : enemies) {
+			for (GameObj target : objects) {
+				if (ori.uID != target.uID) {
+					
+					if (ori.collidingWith(target)) {
+//						System.out.println("COLLISION");
+						
+						ori.TerrainCollision(target);
+						
+					}
+				}
+			}
 		}
 	}
 }

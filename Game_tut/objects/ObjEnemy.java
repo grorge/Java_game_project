@@ -45,5 +45,13 @@ public class ObjEnemy extends UnitObj {
 		// TODO Auto-generated method stub
 		player.w = 64;
 		
+		this.moveVector.x *= -1.0f;
+		this.moveVector.y *= -1.0f;
+	}
+	
+	
+	public void TerrainCollision(GameObj object) {
+		this.moveVector.x *= -1.0f;
+		this.moveVector.y *= -1.0f;
 	}
 }
