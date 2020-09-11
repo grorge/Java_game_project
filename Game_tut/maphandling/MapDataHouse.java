@@ -27,7 +27,7 @@ public class MapDataHouse extends MapData{
 			System.out.println("ERROR LOADING MAPFILE:");
 			e.printStackTrace();
 		}
-		 
+		  
 		String row = "";
 		try {
 			while ((row = br.readLine()) != null) {

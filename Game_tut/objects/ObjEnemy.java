@@ -36,7 +36,7 @@ public class ObjEnemy extends UnitObj {
 	@Override
 	protected void SetImage() {
 		// TODO Auto-generated method stub
-		this.img = IMAGENAME.TREE;
+		this.img = IMAGENAME.MUSHROOM;
 		
 	}
 

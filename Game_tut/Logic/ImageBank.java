@@ -37,6 +37,12 @@ public class ImageBank {
 			System.err.println("ERROR LOADING IMAGE");
 		}
 		try {
+			this.imgBank.put(IMAGENAME.WOODFLOOR, ImageIO.read(new File("img/woodFloor32.png")));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			System.err.println("ERROR LOADING IMAGE");
+		}
+		try {
 			this.imgBank.put(IMAGENAME.MUSHROOM, ImageIO.read(new File("img/mushroom32.png")));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

@@ -63,7 +63,7 @@ public class MapLoader {
 		// Clear out last map
 		this.mapObjects.clear();
 		this.tiles.clear();
-		
+		 
 		
 		
 		int currX = 0, currY = 0;
